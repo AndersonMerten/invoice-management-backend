@@ -1,3 +1,4 @@
+# Dockerfile para Elastic Beanstalk
 FROM node:20-alpine
 
 WORKDIR /app
@@ -14,14 +15,14 @@ RUN pnpm install
 # Copy source code
 COPY . .
 
-# Generate Prisma client
-RUN pnpm prisma generate
+# Generate Prisma client with the correct binary targets
+RUN npx prisma generate
 
 # Build the application
 RUN pnpm build
 
-# Expose the port the app runs on
-EXPOSE 3333
+# Expose the port
+EXPOSE 8080
 
-# Start the application
-CMD ["pnpm", "start:prod"] 
+# Start the server
+CMD ["node", "dist/src/main"]
