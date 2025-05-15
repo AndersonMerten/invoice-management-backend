@@ -23,6 +23,8 @@ RUN pnpm build
 
 # Expose the port
 EXPOSE 8080
+HEALTHCHECK --interval=30s --timeout=3s \
+    CMD wget --quiet --tries=1 --spider http://localhost:8080/api/health || exit 1
 
 # Start the server
 CMD ["node", "dist/src/main"]
