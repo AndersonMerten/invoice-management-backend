@@ -1,0 +1,514 @@
+============= i-0dc6d3315efaf311b ==============
+----------------------------------------
+/var/log/eb-hooks.log
+----------------------------------------
+
+
+----------------------------------------
+/var/log/docker-events.log
+----------------------------------------
+2025-05-15T17:03:22.470365028Z container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:020e7171e28285f6c2d9afb6d53866cd30ca0eb85a4f171c62b3164d6200fd5c, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, execDuration=0, exitCode=1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:04:22.191687757Z network connect b0a8f2feb62775c214c17d53bff58877375e659e04e707a2269d21fc5c208ee9 (container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721, name=current_default, type=bridge)
+2025-05-15T17:04:22.544327364Z container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:020e7171e28285f6c2d9afb6d53866cd30ca0eb85a4f171c62b3164d6200fd5c, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:04:23.724680362Z network disconnect b0a8f2feb62775c214c17d53bff58877375e659e04e707a2269d21fc5c208ee9 (container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721, name=current_default, type=bridge)
+2025-05-15T17:04:23.735981918Z container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:020e7171e28285f6c2d9afb6d53866cd30ca0eb85a4f171c62b3164d6200fd5c, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, execDuration=0, exitCode=1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:05:15.002031896Z container prune  (reclaimed=0)
+2025-05-15T17:05:20.000382397Z image pull postgres:13.5 (name=postgres)
+2025-05-15T17:05:23.644177502Z network connect b0a8f2feb62775c214c17d53bff58877375e659e04e707a2269d21fc5c208ee9 (container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721, name=current_default, type=bridge)
+2025-05-15T17:05:24.986505342Z container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:020e7171e28285f6c2d9afb6d53866cd30ca0eb85a4f171c62b3164d6200fd5c, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:05:29.466102088Z network disconnect b0a8f2feb62775c214c17d53bff58877375e659e04e707a2269d21fc5c208ee9 (container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721, name=current_default, type=bridge)
+2025-05-15T17:05:29.652651179Z container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:020e7171e28285f6c2d9afb6d53866cd30ca0eb85a4f171c62b3164d6200fd5c, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, execDuration=4, exitCode=1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:06:03.568848602Z image tag sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958 (com.docker.compose.project=staging, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, name=staging-invoice_management_api)
+2025-05-15T17:06:09.248467844Z container stop bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:020e7171e28285f6c2d9afb6d53866cd30ca0eb85a4f171c62b3164d6200fd5c, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:06:09.264664115Z container destroy bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:020e7171e28285f6c2d9afb6d53866cd30ca0eb85a4f171c62b3164d6200fd5c, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:06:09.326150548Z container kill eb158616cc475f76b8b2cf7bb570c841c49857d8a7c57c1748506f8ab8efe938 (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres, signal=2)
+2025-05-15T17:06:10.044759266Z network disconnect b0a8f2feb62775c214c17d53bff58877375e659e04e707a2269d21fc5c208ee9 (container=eb158616cc475f76b8b2cf7bb570c841c49857d8a7c57c1748506f8ab8efe938, name=current_default, type=bridge)
+2025-05-15T17:06:10.051260707Z volume unmount 35043bca68856c69126e9818f1c368b820687745b6f3a3fbd18f8a6fd8cf5991 (container=eb158616cc475f76b8b2cf7bb570c841c49857d8a7c57c1748506f8ab8efe938, driver=local)
+2025-05-15T17:06:10.051392499Z container stop eb158616cc475f76b8b2cf7bb570c841c49857d8a7c57c1748506f8ab8efe938 (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:06:10.055921835Z container die eb158616cc475f76b8b2cf7bb570c841c49857d8a7c57c1748506f8ab8efe938 (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, execDuration=961, exitCode=0, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:06:10.063817086Z container destroy eb158616cc475f76b8b2cf7bb570c841c49857d8a7c57c1748506f8ab8efe938 (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:06:10.092299738Z image untag sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691 (name=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691)
+2025-05-15T17:06:10.097764087Z image untag sha256:020e7171e28285f6c2d9afb6d53866cd30ca0eb85a4f171c62b3164d6200fd5c (com.docker.compose.project=staging, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, name=sha256:020e7171e28285f6c2d9afb6d53866cd30ca0eb85a4f171c62b3164d6200fd5c)
+2025-05-15T17:06:10.603950111Z network destroy b0a8f2feb62775c214c17d53bff58877375e659e04e707a2269d21fc5c208ee9 (name=current_default, type=bridge)
+2025-05-15T17:06:10.772381007Z image delete sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691 (name=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691)
+2025-05-15T17:06:10.773848087Z image delete sha256:020e7171e28285f6c2d9afb6d53866cd30ca0eb85a4f171c62b3164d6200fd5c (name=sha256:020e7171e28285f6c2d9afb6d53866cd30ca0eb85a4f171c62b3164d6200fd5c)
+2025-05-15T17:06:12.170106459Z image tag sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958 (com.docker.compose.project=staging, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, name=current-invoice_management_api:latest)
+2025-05-15T17:06:12.206079187Z image untag sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958 (com.docker.compose.project=staging, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, name=sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958)
+2025-05-15T17:06:21.644524656Z image pull postgres:13.5 (name=postgres)
+2025-05-15T17:06:21.941141873Z network create 97504cb565d5a58f37974987be574f62708119f476b6d23ac938656e3b922106 (name=current_default, type=bridge)
+2025-05-15T17:06:22.156466242Z volume create d08358081aaac7b6b378d8b8a70e7f2e1ed53069637007a4d1fa053e43d19fac (driver=local)
+2025-05-15T17:06:22.162752655Z container create 3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805 (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:06:22.193741501Z container create 3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:06:22.283568058Z network connect 97504cb565d5a58f37974987be574f62708119f476b6d23ac938656e3b922106 (container=3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805, name=current_default, type=bridge)
+2025-05-15T17:06:22.288173969Z volume mount d08358081aaac7b6b378d8b8a70e7f2e1ed53069637007a4d1fa053e43d19fac (container=3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805, destination=/var/lib/postgresql/data, driver=local, propagation=, read/write=true)
+2025-05-15T17:06:23.163180633Z container start 3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805 (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:06:23.215530660Z network connect 97504cb565d5a58f37974987be574f62708119f476b6d23ac938656e3b922106 (container=3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f, name=current_default, type=bridge)
+2025-05-15T17:06:23.669074899Z container start 3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:10:18.195722345Z container prune  (reclaimed=0)
+2025-05-15T17:10:23.481923413Z image pull postgres:13.5 (name=postgres)
+2025-05-15T17:11:25.876864220Z image tag sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de (com.docker.compose.project=staging, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, name=staging-invoice_management_api)
+2025-05-15T17:11:31.929132462Z container kill 3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api, signal=15)
+2025-05-15T17:11:41.946019510Z container kill 3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api, signal=9)
+2025-05-15T17:11:42.515500922Z network disconnect 97504cb565d5a58f37974987be574f62708119f476b6d23ac938656e3b922106 (container=3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f, name=current_default, type=bridge)
+2025-05-15T17:11:42.518418264Z container stop 3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:11:42.521323286Z container die 3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, execDuration=318, exitCode=137, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:11:42.535540797Z container destroy 3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:11:42.550513339Z container kill 3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805 (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres, signal=2)
+2025-05-15T17:11:42.924750645Z network disconnect 97504cb565d5a58f37974987be574f62708119f476b6d23ac938656e3b922106 (container=3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805, name=current_default, type=bridge)
+2025-05-15T17:11:42.931587256Z volume unmount d08358081aaac7b6b378d8b8a70e7f2e1ed53069637007a4d1fa053e43d19fac (container=3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805, driver=local)
+2025-05-15T17:11:42.931693368Z container stop 3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805 (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:11:42.935396121Z container die 3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805 (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, execDuration=319, exitCode=0, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:11:42.941146362Z container destroy 3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805 (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:11:42.958111084Z image untag sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691 (name=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691)
+2025-05-15T17:11:42.959783338Z image untag sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958 (com.docker.compose.project=staging, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, name=sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958)
+2025-05-15T17:11:42.964984784Z image delete sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958 (name=sha256:41f6f58709a1bc8f7ed2a3ae2e56709a3058b900c0a60b4cae4c5db2ccf75958)
+2025-05-15T17:11:43.384980439Z network destroy 97504cb565d5a58f37974987be574f62708119f476b6d23ac938656e3b922106 (name=current_default, type=bridge)
+2025-05-15T17:11:43.579007248Z image delete sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691 (name=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691)
+2025-05-15T17:11:44.912841293Z image tag sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de (com.docker.compose.project=staging, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, name=current-invoice_management_api:latest)
+2025-05-15T17:11:44.929986168Z image untag sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de (com.docker.compose.project=staging, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, name=sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de)
+2025-05-15T17:11:54.994271279Z image pull postgres:13.5 (name=postgres)
+2025-05-15T17:11:55.301004639Z network create d09e7200a5192e1116c7c9c75b234963c3ccda8d2d870d690d8da245820c1e6f (name=current_default, type=bridge)
+2025-05-15T17:11:55.529087736Z volume create 5737a93deb7496d12cce52a926c59faf7c888fa27fa18a8d4781aab4ba1ab600 (driver=local)
+2025-05-15T17:11:55.534814898Z container create bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:11:55.563977991Z container create 7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:11:55.647480229Z network connect d09e7200a5192e1116c7c9c75b234963c3ccda8d2d870d690d8da245820c1e6f (container=bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f, name=current_default, type=bridge)
+2025-05-15T17:11:55.652364312Z volume mount 5737a93deb7496d12cce52a926c59faf7c888fa27fa18a8d4781aab4ba1ab600 (container=bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f, destination=/var/lib/postgresql/data, driver=local, propagation=, read/write=true)
+2025-05-15T17:11:56.589250662Z container start bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:11:56.636934391Z network connect d09e7200a5192e1116c7c9c75b234963c3ccda8d2d870d690d8da245820c1e6f (container=7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c, name=current_default, type=bridge)
+2025-05-15T17:11:56.943717333Z container start 7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:17:49.297284850Z container prune  (reclaimed=0)
+2025-05-15T17:17:54.518165608Z image pull postgres:13.5 (name=postgres)
+2025-05-15T17:18:03.292445448Z image tag sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de (com.docker.compose.project=staging, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, name=staging-invoice_management_api)
+2025-05-15T17:18:09.814424599Z container kill 7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api, signal=15)
+2025-05-15T17:18:19.837020246Z container kill 7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api, signal=9)
+2025-05-15T17:18:20.446465720Z network disconnect d09e7200a5192e1116c7c9c75b234963c3ccda8d2d870d690d8da245820c1e6f (container=7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c, name=current_default, type=bridge)
+2025-05-15T17:18:20.457416658Z container stop 7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:18:20.461420030Z container die 7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, execDuration=383, exitCode=137, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:18:20.477410035Z container destroy 7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:18:20.504852146Z container kill bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres, signal=2)
+2025-05-15T17:18:21.055366946Z network disconnect d09e7200a5192e1116c7c9c75b234963c3ccda8d2d870d690d8da245820c1e6f (container=bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f, name=current_default, type=bridge)
+2025-05-15T17:18:21.061834218Z volume unmount 5737a93deb7496d12cce52a926c59faf7c888fa27fa18a8d4781aab4ba1ab600 (container=bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f, driver=local)
+2025-05-15T17:18:21.061944828Z container stop bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:18:21.066842961Z container die bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, execDuration=384, exitCode=0, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:18:21.076966181Z container destroy bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:18:21.098859370Z image untag sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691 (name=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691)
+2025-05-15T17:18:21.103332509Z image untag sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de (com.docker.compose.project=staging, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, name=sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de)
+2025-05-15T17:18:21.564288396Z network destroy d09e7200a5192e1116c7c9c75b234963c3ccda8d2d870d690d8da245820c1e6f (name=current_default, type=bridge)
+2025-05-15T17:18:21.821319076Z image delete sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691 (name=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691)
+2025-05-15T17:18:23.197903432Z image tag sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de (com.docker.compose.project=staging, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, name=current-invoice_management_api:latest)
+2025-05-15T17:18:23.214621165Z image untag sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de (com.docker.compose.project=staging, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, name=sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de)
+2025-05-15T17:18:32.992783708Z image pull postgres:13.5 (name=postgres)
+2025-05-15T17:18:33.314553623Z network create de73b096b71d42cf29a9046116cad176e9ce4a3cf0691e788a3951343285c411 (name=current_default, type=bridge)
+2025-05-15T17:18:33.594790746Z volume create 4d0b2c43607a4c2f08eb6ba7a8e5540305cd35f924552adca516154a458865eb (driver=local)
+2025-05-15T17:18:33.602857635Z container create 7be8df104a24171e8b5536f4175acfa1eeb951f7f8199677f7527b15d4b7aecc (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:18:33.633835125Z container create 580e7df6862cd495aec716e41619b1850e1d51e28c93beeded4532b18e7f0b30 (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+2025-05-15T17:18:33.720412407Z network connect de73b096b71d42cf29a9046116cad176e9ce4a3cf0691e788a3951343285c411 (container=7be8df104a24171e8b5536f4175acfa1eeb951f7f8199677f7527b15d4b7aecc, name=current_default, type=bridge)
+2025-05-15T17:18:33.725624720Z volume mount 4d0b2c43607a4c2f08eb6ba7a8e5540305cd35f924552adca516154a458865eb (container=7be8df104a24171e8b5536f4175acfa1eeb951f7f8199677f7527b15d4b7aecc, destination=/var/lib/postgresql/data, driver=local, propagation=, read/write=true)
+2025-05-15T17:18:34.603380863Z container start 7be8df104a24171e8b5536f4175acfa1eeb951f7f8199677f7527b15d4b7aecc (com.docker.compose.config-hash=86f9834d9d75a02e85b77ead67b273090f4a8dc2d39c7d12db9cbd4920f86d21, com.docker.compose.container-number=1, com.docker.compose.depends_on=, com.docker.compose.image=sha256:e01c76bb1351f3fb966f97cf108f1ff586056a517d56c9ec2629ede6be756691, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_postgres, com.docker.compose.version=2.35.1, image=postgres:13.5, name=invoice_management_postgres)
+2025-05-15T17:18:34.660242290Z network connect de73b096b71d42cf29a9046116cad176e9ce4a3cf0691e788a3951343285c411 (container=580e7df6862cd495aec716e41619b1850e1d51e28c93beeded4532b18e7f0b30, name=current_default, type=bridge)
+2025-05-15T17:18:35.030691902Z container start 580e7df6862cd495aec716e41619b1850e1d51e28c93beeded4532b18e7f0b30 (com.docker.compose.config-hash=430ca71719535ae619448557d45f18febc63163a0f3568fd4db19205d6bff90f, com.docker.compose.container-number=1, com.docker.compose.depends_on=invoice_management_postgres:service_started:false, com.docker.compose.image=sha256:75e2f8e010bb2a180164a6bfd360638956833a69c61130c3b13052b8977c76de, com.docker.compose.oneoff=False, com.docker.compose.project=current, com.docker.compose.project.config_files=/var/app/current/docker-compose.yml, com.docker.compose.project.working_dir=/var/app/current, com.docker.compose.service=invoice_management_api, com.docker.compose.version=2.35.1, image=current-invoice_management_api, name=invoice_management_api)
+
+
+----------------------------------------
+/var/log/docker-compose-events.log
+----------------------------------------
+
+2025-05-15 16:50:27.873750 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api)
+
+2025-05-15 16:50:29.025075 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (execDuration=0, exitCode=1, name=invoice_management_api, image=current-invoice_management_api)
+
+2025-05-15 16:50:35.472577 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api)
+
+2025-05-15 16:50:36.754536 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (exitCode=1, name=invoice_management_api, execDuration=0, image=current-invoice_management_api)
+
+2025-05-15 16:50:49.501643 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (name=invoice_management_api, image=current-invoice_management_api)
+
+2025-05-15 16:50:50.620477 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (name=invoice_management_api, image=current-invoice_management_api, execDuration=0, exitCode=1)
+
+2025-05-15 16:51:16.241660 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api)
+
+2025-05-15 16:51:17.434328 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (exitCode=1, name=invoice_management_api, execDuration=0, image=current-invoice_management_api)
+
+2025-05-15 16:52:08.623565 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api)
+
+2025-05-15 16:52:09.738354 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, execDuration=0, name=invoice_management_api, exitCode=1)
+
+2025-05-15 16:53:09.702847 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (name=invoice_management_api, image=current-invoice_management_api)
+
+2025-05-15 16:53:10.879512 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (exitCode=1, image=current-invoice_management_api, name=invoice_management_api, execDuration=0)
+
+2025-05-15 16:54:10.925173 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api)
+
+2025-05-15 16:54:12.064145 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, exitCode=1, name=invoice_management_api, execDuration=0)
+
+2025-05-15 16:55:12.113635 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api)
+
+2025-05-15 16:55:13.346414 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api, exitCode=1, execDuration=0)
+
+2025-05-15 16:56:13.280489 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api)
+
+2025-05-15 16:56:14.426092 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (name=invoice_management_api, exitCode=1, image=current-invoice_management_api, execDuration=0)
+
+2025-05-15 16:57:14.433316 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api)
+
+2025-05-15 16:57:15.605454 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (execDuration=0, exitCode=1, name=invoice_management_api, image=current-invoice_management_api)
+
+2025-05-15 16:58:15.566762 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api)
+
+2025-05-15 16:58:16.725561 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (name=invoice_management_api, execDuration=0, exitCode=1, image=current-invoice_management_api)
+
+2025-05-15 16:59:16.734114 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api)
+
+2025-05-15 16:59:17.825269 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (name=invoice_management_api, execDuration=0, image=current-invoice_management_api, exitCode=1)
+
+2025-05-15 17:00:17.884637 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (name=invoice_management_api, image=current-invoice_management_api)
+
+2025-05-15 17:00:19.024364 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (name=invoice_management_api, execDuration=0, exitCode=1, image=current-invoice_management_api)
+
+2025-05-15 17:01:19.048826 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (name=invoice_management_api, image=current-invoice_management_api)
+
+2025-05-15 17:01:20.254761 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (exitCode=1, image=current-invoice_management_api, execDuration=0, name=invoice_management_api)
+
+2025-05-15 17:02:20.266744 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api)
+
+2025-05-15 17:02:21.430169 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api, execDuration=0, exitCode=1)
+
+2025-05-15 17:03:21.391927 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (name=invoice_management_api, image=current-invoice_management_api)
+
+2025-05-15 17:03:22.470365 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (execDuration=0, exitCode=1, name=invoice_management_api, image=current-invoice_management_api)
+
+2025-05-15 17:04:22.544327 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (image=current-invoice_management_api, name=invoice_management_api)
+
+2025-05-15 17:04:23.735981 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (exitCode=1, execDuration=0, name=invoice_management_api, image=current-invoice_management_api)
+
+2025-05-15 17:05:24.986505 container start bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (name=invoice_management_api, image=current-invoice_management_api)
+
+2025-05-15 17:05:29.652651 container die bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 (name=invoice_management_api, image=current-invoice_management_api, execDuration=4, exitCode=1)
+
+
+2025-05-15 17:06:22.162752 container create 3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805 (image=postgres:13.5, name=invoice_management_postgres)
+
+2025-05-15 17:06:22.193741 container create 3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f (image=current-invoice_management_api, name=invoice_management_api)
+
+2025-05-15 17:06:23.163180 container start 3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805 (image=postgres:13.5, name=invoice_management_postgres)
+
+2025-05-15 17:06:23.669074 container start 3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f (name=invoice_management_api, image=current-invoice_management_api)
+
+
+2025-05-15 17:11:55.534814 container create bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f (image=postgres:13.5, name=invoice_management_postgres)
+
+2025-05-15 17:11:55.563977 container create 7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c (name=invoice_management_api, image=current-invoice_management_api)
+
+2025-05-15 17:11:56.589250 container start bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f (name=invoice_management_postgres, image=postgres:13.5)
+
+2025-05-15 17:11:56.943717 container start 7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c (name=invoice_management_api, image=current-invoice_management_api)
+
+
+2025-05-15 17:18:33.602857 container create 7be8df104a24171e8b5536f4175acfa1eeb951f7f8199677f7527b15d4b7aecc (image=postgres:13.5, name=invoice_management_postgres)
+
+2025-05-15 17:18:33.633835 container create 580e7df6862cd495aec716e41619b1850e1d51e28c93beeded4532b18e7f0b30 (name=invoice_management_api, image=current-invoice_management_api)
+
+2025-05-15 17:18:34.603380 container start 7be8df104a24171e8b5536f4175acfa1eeb951f7f8199677f7527b15d4b7aecc (name=invoice_management_postgres, image=postgres:13.5)
+
+2025-05-15 17:18:35.030691 container start 580e7df6862cd495aec716e41619b1850e1d51e28c93beeded4532b18e7f0b30 (image=current-invoice_management_api, name=invoice_management_api)
+
+
+
+----------------------------------------
+/var/log/docker
+----------------------------------------
+May 15 16:28:42 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:28:42.081955730Z" level=info msg="ignoring event" container=caa44381f970974986216761fa985aff4989982f4ebd56edc946619199d08275 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:29:42 ip-172-31-27-49 docker[1864]: 2025/05/15 16:29:42 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:29:44 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:29:44.242070705Z" level=info msg="ignoring event" container=caa44381f970974986216761fa985aff4989982f4ebd56edc946619199d08275 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:30:45 ip-172-31-27-49 docker[1864]: 2025/05/15 16:30:45 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:30:46 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:30:46.482683273Z" level=info msg="ignoring event" container=caa44381f970974986216761fa985aff4989982f4ebd56edc946619199d08275 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:31:47 ip-172-31-27-49 docker[1864]: 2025/05/15 16:31:47 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:31:48 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:31:48.731771562Z" level=info msg="ignoring event" container=caa44381f970974986216761fa985aff4989982f4ebd56edc946619199d08275 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:32:49 ip-172-31-27-49 docker[1864]: 2025/05/15 16:32:49 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:32:50 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:32:50.961911084Z" level=info msg="ignoring event" container=caa44381f970974986216761fa985aff4989982f4ebd56edc946619199d08275 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:33:51 ip-172-31-27-49 docker[1864]: 2025/05/15 16:33:51 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:33:53 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:33:53.231736132Z" level=info msg="ignoring event" container=caa44381f970974986216761fa985aff4989982f4ebd56edc946619199d08275 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:34:54 ip-172-31-27-49 docker[1864]: 2025/05/15 16:34:54 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:34:55 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:34:55.622488249Z" level=info msg="ignoring event" container=caa44381f970974986216761fa985aff4989982f4ebd56edc946619199d08275 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:35:56 ip-172-31-27-49 docker[1864]: 2025/05/15 16:35:56 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:35:57 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:35:57.903322774Z" level=info msg="ignoring event" container=caa44381f970974986216761fa985aff4989982f4ebd56edc946619199d08275 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:36:59 ip-172-31-27-49 docker[1864]: 2025/05/15 16:36:59 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:37:00 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:37:00.422120583Z" level=info msg="ignoring event" container=caa44381f970974986216761fa985aff4989982f4ebd56edc946619199d08275 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:38:01 ip-172-31-27-49 docker[1864]: 2025/05/15 16:38:01 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:38:03 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:38:03.153787660Z" level=info msg="ignoring event" container=caa44381f970974986216761fa985aff4989982f4ebd56edc946619199d08275 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:39:04 ip-172-31-27-49 docker[1864]: 2025/05/15 16:39:04 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:39:05 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:39:05.502207290Z" level=info msg="ignoring event" container=caa44381f970974986216761fa985aff4989982f4ebd56edc946619199d08275 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:48:23 ip-172-31-27-49 docker[1864]: 2025/05/15 16:48:23 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:48:25 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:48:25.874111910Z" level=info msg="ignoring event" container=caa44381f970974986216761fa985aff4989982f4ebd56edc946619199d08275 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:49:28 ip-172-31-27-49 docker[1864]: 2025/05/15 16:49:28 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:49:30 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:49:30.027361020Z" level=info msg="ignoring event" container=caa44381f970974986216761fa985aff4989982f4ebd56edc946619199d08275 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:49:53 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:49:53.953760471Z" level=info msg="ignoring event" container=0a022156cf24aa9b1828c42476313f95b6b7497cbb2025f22f8b43caf13eb87d module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:49:54 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:49:54.062536258Z" level=warning msg="ShouldRestart failed, container will not be restarted" container=0a022156cf24aa9b1828c42476313f95b6b7497cbb2025f22f8b43caf13eb87d daemonShuttingDown=false error="restart canceled" execDuration=37m56.552675888s exitStatus="{0 2025-05-15 16:49:53.918839104 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+May 15 16:50:07 ip-172-31-27-49 docker[1864]: 2025/05/15 16:50:07 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:50:10 ip-172-31-27-49 docker[1864]: 2025/05/15 16:50:10 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:50:11 ip-172-31-27-49 docker[1864]: 2025/05/15 16:50:11 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:50:11 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:50:11.979828846Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:50:12 ip-172-31-27-49 docker[1864]: 2025/05/15 16:50:12 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:50:15 ip-172-31-27-49 docker[1864]: 2025/05/15 16:50:15 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:50:15 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:50:15.387934534Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:50:17 ip-172-31-27-49 docker[1864]: 2025/05/15 16:50:17 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:50:17 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:50:17.941983233Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:50:19 ip-172-31-27-49 docker[1864]: 2025/05/15 16:50:19 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:50:19 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:50:19.521630710Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:50:21 ip-172-31-27-49 docker[1864]: 2025/05/15 16:50:21 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:50:21 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:50:21.552178795Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:50:24 ip-172-31-27-49 docker[1864]: 2025/05/15 16:50:24 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:50:24 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:50:24.262370721Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:50:28 ip-172-31-27-49 docker[1864]: 2025/05/15 16:50:28 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:50:28 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:50:28.661979557Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:50:36 ip-172-31-27-49 docker[1864]: 2025/05/15 16:50:36 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:50:36 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:50:36.261929367Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:50:50 ip-172-31-27-49 docker[1864]: 2025/05/15 16:50:50 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:50:50 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:50:50.272160741Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:51:16 ip-172-31-27-49 docker[1864]: 2025/05/15 16:51:16 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:51:17 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:51:17.002325359Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:52:09 ip-172-31-27-49 docker[1864]: 2025/05/15 16:52:09 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:52:09 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:52:09.361738118Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:53:10 ip-172-31-27-49 docker[1864]: 2025/05/15 16:53:10 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:53:10 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:53:10.544204717Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:54:11 ip-172-31-27-49 docker[1864]: 2025/05/15 16:54:11 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:54:11 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:54:11.682018706Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:55:12 ip-172-31-27-49 docker[1864]: 2025/05/15 16:55:12 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:55:12 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:55:12.923388848Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:56:13 ip-172-31-27-49 docker[1864]: 2025/05/15 16:56:13 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:56:14 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:56:14.052293891Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:57:15 ip-172-31-27-49 docker[1864]: 2025/05/15 16:57:15 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:57:15 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:57:15.211757314Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:58:16 ip-172-31-27-49 docker[1864]: 2025/05/15 16:58:16 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:58:16 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:58:16.344430663Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 16:59:17 ip-172-31-27-49 docker[1864]: 2025/05/15 16:59:17 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 16:59:17 ip-172-31-27-49 docker[1864]: time="2025-05-15T16:59:17.492319419Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 17:00:18 ip-172-31-27-49 docker[1864]: 2025/05/15 17:00:18 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:00:18 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:00:18.691987962Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 17:01:19 ip-172-31-27-49 docker[1864]: 2025/05/15 17:01:19 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:01:19 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:01:19.892257529Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 17:02:20 ip-172-31-27-49 docker[1864]: 2025/05/15 17:02:20 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:02:21 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:02:21.013882439Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 17:03:22 ip-172-31-27-49 docker[1864]: 2025/05/15 17:03:22 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:03:22 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:03:22.133634805Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 17:04:23 ip-172-31-27-49 docker[1864]: 2025/05/15 17:04:23 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:04:23 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:04:23.332239206Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 17:05:27 ip-172-31-27-49 docker[1864]: 2025/05/15 17:05:27 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:05:28 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:05:28.844562071Z" level=info msg="ignoring event" container=bb5bc06a32e3e003241959efeace018581be5757aa579cf45b1998c66c734721 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 17:06:09 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:06:09.512893671Z" level=info msg="ignoring event" container=eb158616cc475f76b8b2cf7bb570c841c49857d8a7c57c1748506f8ab8efe938 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 17:06:09 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:06:09.617416507Z" level=warning msg="ShouldRestart failed, container will not be restarted" container=eb158616cc475f76b8b2cf7bb570c841c49857d8a7c57c1748506f8ab8efe938 daemonShuttingDown=false error="restart canceled" execDuration=16m1.277451779s exitStatus="{0 2025-05-15 17:06:09.476145522 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+May 15 17:06:22 ip-172-31-27-49 docker[1864]: 2025/05/15 17:06:22 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:06:25 ip-172-31-27-49 docker[1864]: 2025/05/15 17:06:25 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:06:26 ip-172-31-27-49 docker[1864]: 2025/05/15 17:06:26 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:10:23 ip-172-31-27-49 docker[1864]: 2025/05/15 17:10:23 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+May 15 17:11:41 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:11:41.929276568Z" level=info msg="Container failed to exit within 10s of signal 15 - using the force" container=3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f
+May 15 17:11:41 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:11:41.991383385Z" level=info msg="ignoring event" container=3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 17:11:42 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:11:42.111211224Z" level=warning msg="ShouldRestart failed, container will not be restarted" container=3da7edb044005fd69967d773e633d5e81d6ab7851060796e8e0277abd9a7535f daemonShuttingDown=false error="restart canceled" execDuration=5m18.445609008s exitStatus="{137 2025-05-15 17:11:41.952469451 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+May 15 17:11:42 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:11:42.631702491Z" level=info msg="ignoring event" container=3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 17:11:42 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:11:42.649651758Z" level=warning msg="ShouldRestart failed, container will not be restarted" container=3416eadf3bc17a648d773deeaa1eb91eb479ce853055d89300deddbdebb65805 daemonShuttingDown=false error="restart canceled" execDuration=5m19.491980484s exitStatus="{0 2025-05-15 17:11:42.578439342 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+May 15 17:11:55 ip-172-31-27-49 docker[1864]: 2025/05/15 17:11:55 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:11:58 ip-172-31-27-49 docker[1864]: 2025/05/15 17:11:58 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:11:59 ip-172-31-27-49 docker[1864]: 2025/05/15 17:11:59 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:18:19 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:18:19.815292857Z" level=info msg="Container failed to exit within 10s of signal 15 - using the force" container=7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c
+May 15 17:18:19 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:18:19.919284910Z" level=info msg="ignoring event" container=7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 17:18:20 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:18:20.031368020Z" level=warning msg="ShouldRestart failed, container will not be restarted" container=7ad55b29de4c83999d7d7b3eaf229fc1f3f703e5c693b47a85523fbf8f71844c daemonShuttingDown=false error="restart canceled" execDuration=6m23.092050445s exitStatus="{137 2025-05-15 17:18:19.84323206 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+May 15 17:18:20 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:18:20.682680998Z" level=info msg="ignoring event" container=bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 15 17:18:20 ip-172-31-27-49 docker[1864]: time="2025-05-15T17:18:20.702156930Z" level=warning msg="ShouldRestart failed, container will not be restarted" container=bfa6a51452b80f3f30096a18895ae161e352cc0c6f6a2c550bb8633084715f6f daemonShuttingDown=false error="restart canceled" execDuration=6m24.117776109s exitStatus="{0 2025-05-15 17:18:20.620423364 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+May 15 17:18:33 ip-172-31-27-49 docker[1864]: 2025/05/15 17:18:33 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:18:36 ip-172-31-27-49 docker[1864]: 2025/05/15 17:18:36 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+May 15 17:18:37 ip-172-31-27-49 docker[1864]: 2025/05/15 17:18:37 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+
+
+----------------------------------------
+/var/log/eb-docker/containers/eb-current-app/eb-stdouterr.log
+----------------------------------------
+invoice_management_postgres  | The files belonging to this database system will be owned by user "postgres".
+invoice_management_postgres  | This user must also own the server process.
+invoice_management_postgres  | 
+invoice_management_postgres  | The database cluster will be initialized with locale "en_US.utf8".
+invoice_management_postgres  | The default database encoding has accordingly been set to "UTF8".
+invoice_management_postgres  | The default text search configuration will be set to "english".
+invoice_management_postgres  | 
+invoice_management_postgres  | Data page checksums are disabled.
+invoice_management_postgres  | 
+invoice_management_postgres  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+invoice_management_postgres  | creating subdirectories ... ok
+invoice_management_postgres  | selecting dynamic shared memory implementation ... posix
+invoice_management_postgres  | selecting default max_connections ... 100
+invoice_management_postgres  | selecting default shared_buffers ... 128MB
+invoice_management_postgres  | selecting default time zone ... Etc/UTC
+invoice_management_postgres  | creating configuration files ... ok
+invoice_management_postgres  | running bootstrap script ... ok
+invoice_management_postgres  | performing post-bootstrap initialization ... ok
+invoice_management_postgres  | initdb: warning: enabling "trust" authentication for local connections
+invoice_management_postgres  | You can change this by editing pg_hba.conf or using the option -A, or
+invoice_management_postgres  | --auth-local and --auth-host, the next time you run initdb.
+invoice_management_postgres  | syncing data to disk ... ok
+invoice_management_postgres  | 
+invoice_management_postgres  | 
+invoice_management_postgres  | Success. You can now start the database server using:
+invoice_management_postgres  | 
+invoice_management_postgres  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+invoice_management_postgres  | 
+invoice_management_postgres  | waiting for server to start....2025-05-15 17:18:36.509 UTC [47] LOG:  starting PostgreSQL 13.5 (Debian 13.5-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit
+invoice_management_postgres  | 2025-05-15 17:18:36.512 UTC [47] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+invoice_management_postgres  | 2025-05-15 17:18:36.530 UTC [48] LOG:  database system was shut down at 2025-05-15 17:18:36 UTC
+invoice_management_postgres  | 2025-05-15 17:18:36.539 UTC [47] LOG:  database system is ready to accept connections
+invoice_management_postgres  |  done
+invoice_management_postgres  | server started
+invoice_management_postgres  | CREATE DATABASE
+invoice_management_postgres  | 
+invoice_management_postgres  | 
+invoice_management_postgres  | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+invoice_management_postgres  | 
+invoice_management_postgres  | 2025-05-15 17:18:36.879 UTC [47] LOG:  received fast shutdown request
+invoice_management_postgres  | waiting for server to shut down....2025-05-15 17:18:36.880 UTC [47] LOG:  aborting any active transactions
+invoice_management_postgres  | 2025-05-15 17:18:36.882 UTC [47] LOG:  background worker "logical replication launcher" (PID 54) exited with exit code 1
+invoice_management_postgres  | 2025-05-15 17:18:36.886 UTC [49] LOG:  shutting down
+invoice_management_postgres  | 2025-05-15 17:18:36.899 UTC [47] LOG:  database system is shut down
+invoice_management_postgres  |  done
+invoice_management_postgres  | server stopped
+invoice_management_postgres  | 
+invoice_management_postgres  | PostgreSQL init process complete; ready for start up.
+invoice_management_postgres  | 
+invoice_management_postgres  | 2025-05-15 17:18:37.013 UTC [1] LOG:  starting PostgreSQL 13.5 (Debian 13.5-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit
+invoice_management_postgres  | 2025-05-15 17:18:37.021 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+invoice_management_postgres  | 2025-05-15 17:18:37.021 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+invoice_management_postgres  | 2025-05-15 17:18:37.025 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+invoice_management_postgres  | 2025-05-15 17:18:37.032 UTC [61] LOG:  database system was shut down at 2025-05-15 17:18:36 UTC
+invoice_management_postgres  | 2025-05-15 17:18:37.037 UTC [1] LOG:  database system is ready to accept connections
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +42ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mInvoicesModule dependencies initialized[39m[38;5;3m +1ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCashUpsModule dependencies initialized[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBalancesModule dependencies initialized[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +51ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +3ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mInvoicesController {/invoices}:[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/invoices, POST} route[39m[38;5;3m +1ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/invoices, GET} route[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/invoices/:id, GET} route[39m[38;5;3m +1ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/invoices/:id, PATCH} route[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/invoices/:id, DELETE} route[39m[38;5;3m +1ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCashUpsController {/cash-ups}:[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/cash-ups, POST} route[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/cash-ups, GET} route[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/cash-ups/:id, GET} route[39m[38;5;3m +1ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/cash-ups/:id, PATCH} route[39m[38;5;3m +1ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/cash-ups/:id, DELETE} route[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBalancesController {/balances}:[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/balances, POST} route[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/balances, GET} route[39m[38;5;3m +1ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/balances/:id, GET} route[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/balances/:id, PATCH} route[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/balances/:id, DELETE} route[39m[38;5;3m +0ms[39m
+invoice_management_api       | [32m[Nest] 1  - [39m05/15/2025, 5:18:38 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +731ms[39m
+invoice_management_api       | Application is running on: http://127.0.0.1:8080
+
+
+----------------------------------------
+/var/log/eb-engine.log
+----------------------------------------
+  D-Bus, udev, scripted systemctl call, ...).
+• In case of template units, the unit is meant to be enabled with some
+  instance name specified.
+
+2025/05/15 17:18:36.115059 [INFO] Running command: systemctl show -p PartOf eb-docker-compose-log.service
+2025/05/15 17:18:36.138903 [INFO] Running command: systemctl is-active eb-docker-compose-log.service
+2025/05/15 17:18:36.154543 [INFO] Running command: systemctl start eb-docker-compose-log.service
+2025/05/15 17:18:36.277232 [INFO] Running command: docker compose ps -q
+2025/05/15 17:18:36.980831 [INFO] 580e7df6862cd495aec716e41619b1850e1d51e28c93beeded4532b18e7f0b30
+7be8df104a24171e8b5536f4175acfa1eeb951f7f8199677f7527b15d4b7aecc
+
+2025/05/15 17:18:36.982031 [INFO] Cleanup images ...
+2025/05/15 17:18:36.982051 [INFO] Running command: docker images -a
+2025/05/15 17:18:37.041988 [INFO] REPOSITORY                       TAG       IMAGE ID       CREATED         SIZE
+current-invoice_management_api   latest    75e2f8e010bb   7 minutes ago   1.19GB
+postgres                         13.5      e01c76bb1351   3 years ago     371MB
+
+2025/05/15 17:18:37.052393 [INFO] Running command: docker rmi `docker images -aq`
+2025/05/15 17:18:37.102420 [INFO] Error response from daemon: conflict: unable to delete 75e2f8e010bb (cannot be forced) - image is being used by running container 580e7df6862c
+Error response from daemon: conflict: unable to delete e01c76bb1351 (cannot be forced) - image is being used by running container 7be8df104a24
+
+2025/05/15 17:18:37.102451 [INFO] Running command: docker images -a
+2025/05/15 17:18:37.119908 [INFO] REPOSITORY                       TAG       IMAGE ID       CREATED         SIZE
+current-invoice_management_api   latest    75e2f8e010bb   7 minutes ago   1.19GB
+postgres                         13.5      e01c76bb1351   3 years ago     371MB
+
+2025/05/15 17:18:37.119937 [INFO] Pruning build cache ...
+2025/05/15 17:18:37.119947 [INFO] Running command: docker builder prune -f
+2025/05/15 17:18:38.534807 [INFO] ID						RECLAIMABLE	SIZE		LAST ACCESSED
+621bzj90o5gmx00vuzm26ovf2*              	true 		440B      	34 seconds ago
+cpl02nzcxej4mr9j17388nmip*              	true 	80B       	34 seconds ago
+37dz5dj14uy2lq5gln6nmsr0q*              	true 	313.3MB   	35 seconds ago
+Total:	313.3MB
+
+2025/05/15 17:18:38.540794 [INFO] Executing instruction: start X-Ray
+2025/05/15 17:18:38.546320 [INFO] X-Ray is not enabled.
+2025/05/15 17:18:38.546338 [INFO] Executing instruction: configureSqsd
+2025/05/15 17:18:38.548538 [INFO] This is a web server environment instance, skip configure sqsd daemon ...
+2025/05/15 17:18:38.548560 [INFO] Executing instruction: startSqsd
+2025/05/15 17:18:38.548564 [INFO] This is a web server environment instance, skip start sqsd daemon ...
+2025/05/15 17:18:38.548568 [INFO] Executing instruction: Track pids in healthd
+2025/05/15 17:18:38.548574 [INFO] This is an enhanced health env...
+2025/05/15 17:18:38.549497 [INFO] Running command: systemctl show -p ConsistsOf aws-eb.target | cut -d= -f2
+2025/05/15 17:18:38.650332 [INFO] healthd.service eb-docker-events.service cfn-hup.service eb-docker-compose-events.service eb-docker-compose-log.service docker.service
+
+2025/05/15 17:18:38.650373 [INFO] Running command: systemctl show -p ConsistsOf eb-app.target | cut -d= -f2
+2025/05/15 17:18:38.659826 [INFO] 
+
+2025/05/15 17:18:38.669845 [INFO] Executing instruction: RunAppDeployPostDeployHooks
+2025/05/15 17:18:38.669937 [INFO] Executing platform hooks in .platform/hooks/postdeploy/
+2025/05/15 17:18:38.671169 [INFO] The dir .platform/hooks/postdeploy/ does not exist
+2025/05/15 17:18:38.671194 [INFO] Finished running scripts in /var/app/current/.platform/hooks/postdeploy
+2025/05/15 17:18:38.671212 [INFO] Executing cleanup logic
+2025/05/15 17:18:38.690295 [INFO] CommandService Response: {"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"Engine execution has succeeded.","returncode":0,"events":[{"msg":"Instance deployment completed successfully.","timestamp":1747329518672,"severity":"INFO"}]}]}
+
+2025/05/15 17:18:38.692773 [INFO] Platform Engine finished execution on command: app-deploy
+
+2025/05/15 17:19:40.768451 [INFO] Starting...
+2025/05/15 17:19:40.770026 [INFO] Starting EBPlatform-PlatformEngine
+2025/05/15 17:19:40.770086 [INFO] reading event message file
+2025/05/15 17:19:40.777474 [INFO] Engine received EB command cfn-hup-exec
+
+2025/05/15 17:19:40.966355 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:sa-east-1:495467520574:stack/awseb-e-bk327jr2c6-stack/f9686a60-31a5-11f0-ac32-06df7cff90a3 -r AWSEBAutoScalingGroup --region sa-east-1
+2025/05/15 17:19:41.555609 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:sa-east-1:495467520574:stack/awseb-e-bk327jr2c6-stack/f9686a60-31a5-11f0-ac32-06df7cff90a3 -r AWSEBBeanstalkMetadata --region sa-east-1
+2025/05/15 17:19:41.874013 [INFO] checking whether command tail-log is applicable to this instance...
+2025/05/15 17:19:41.874032 [INFO] this command is applicable to the instance, thus instance should execute command
+2025/05/15 17:19:41.874035 [INFO] Engine command: (tail-log)
+
+2025/05/15 17:19:41.876542 [INFO] Executing instruction: GetTailLogs
+2025/05/15 17:19:41.876554 [INFO] Tail Logs...
+2025/05/15 17:19:41.884531 [INFO] Running command: tail -n 100 /var/log/eb-engine.log
+2025/05/15 17:19:41.888367 [INFO] Running command: tail -n 100 /var/log/eb-hooks.log
+2025/05/15 17:19:41.890366 [INFO] Running command: tail -n 100 /var/log/docker-events.log
+2025/05/15 17:19:41.896058 [INFO] Running command: tail -n 100 /var/log/docker-compose-events.log
+2025/05/15 17:19:41.899275 [INFO] Running command: tail -n 100 /var/log/docker
+2025/05/15 17:19:41.903211 [INFO] Running command: tail -n 100 /var/log/eb-docker/containers/eb-current-app/eb-stdouterr.log
+2025/05/15 17:19:41.986444 [INFO] Executing cleanup logic
+2025/05/15 17:19:41.986513 [INFO] CommandService Response: {"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"Engine execution has succeeded.","returncode":0,"events":[{"msg":"Instance deployment completed successfully.","timestamp":1747329581986,"severity":"INFO"}]}]}
+
+2025/05/15 17:19:41.986529 [INFO] Platform Engine finished execution on command: tail-log
+
+2025/05/15 17:21:38.265575 [INFO] Starting...
+2025/05/15 17:21:38.265631 [INFO] Starting EBPlatform-PlatformEngine
+2025/05/15 17:21:38.265658 [INFO] reading event message file
+2025/05/15 17:21:38.265998 [INFO] Engine received EB command cfn-hup-exec
+
+2025/05/15 17:21:38.347474 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:sa-east-1:495467520574:stack/awseb-e-bk327jr2c6-stack/f9686a60-31a5-11f0-ac32-06df7cff90a3 -r AWSEBAutoScalingGroup --region sa-east-1
+2025/05/15 17:21:38.666425 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:sa-east-1:495467520574:stack/awseb-e-bk327jr2c6-stack/f9686a60-31a5-11f0-ac32-06df7cff90a3 -r AWSEBBeanstalkMetadata --region sa-east-1
+2025/05/15 17:21:38.977232 [INFO] checking whether command tail-log is applicable to this instance...
+2025/05/15 17:21:38.977245 [INFO] this command is applicable to the instance, thus instance should execute command
+2025/05/15 17:21:38.977248 [INFO] Engine command: (tail-log)
+
+2025/05/15 17:21:38.977296 [INFO] Executing instruction: GetTailLogs
+2025/05/15 17:21:38.977299 [INFO] Tail Logs...
+2025/05/15 17:21:38.977702 [INFO] Running command: tail -n 100 /var/log/eb-hooks.log
+2025/05/15 17:21:38.980084 [INFO] Running command: tail -n 100 /var/log/docker-events.log
+2025/05/15 17:21:38.982278 [INFO] Running command: tail -n 100 /var/log/docker-compose-events.log
+2025/05/15 17:21:38.984930 [INFO] Running command: tail -n 100 /var/log/docker
+2025/05/15 17:21:38.986690 [INFO] Running command: tail -n 100 /var/log/eb-docker/containers/eb-current-app/eb-stdouterr.log
+2025/05/15 17:21:38.988762 [INFO] Running command: tail -n 100 /var/log/eb-engine.log
+
+
