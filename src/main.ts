@@ -1,9 +1,13 @@
 import { NestFactory } from '@nestjs/core';
+import { ExpressAdapter } from '@nestjs/platform-express';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import * as express from 'express';
 import { AppModule } from './app.module';
 
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+async function bootstrap(expressInstance?: express.Express) {
+  const app = expressInstance
+    ? await NestFactory.create(AppModule, new ExpressAdapter(expressInstance))
+    : await NestFactory.create(AppModule);
 
   app.enableShutdownHooks();
   app.enableCors({
@@ -22,8 +26,8 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config);
 
-  // Configuração do Swagger UI com opções específicas para ambiente serverless
-  SwaggerModule.setup('/', app, document, {
+  // Configuração do Swagger UI na rota /api-docs
+  SwaggerModule.setup('api', app, document, {
     swaggerOptions: {
       persistAuthorization: true,
       docExpansion: 'none',
