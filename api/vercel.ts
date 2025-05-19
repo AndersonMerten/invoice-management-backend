@@ -1,21 +1,18 @@
 import { NestFactory } from '@nestjs/core';
-import { configure as serverlessExpress } from '@vendia/serverless-express';
 import { AppModule } from '../src/app.module';
 
-let server: any;
+let app: any;
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  await app.init();
+  if (!app) {
+    app = await NestFactory.create(AppModule);
+    await app.init();
+  }
   return app;
 }
 
-const handler = async (event: any, context: any) => {
-  if (!server) {
-    const app = await bootstrap();
-    server = serverlessExpress({ app: app.getHttpAdapter().getInstance() });
-  }
-  return server(event, context);
-};
-
-export default handler;
+export default async function handler(req: any, res: any) {
+  const nestApp = await bootstrap();
+  const expressApp = nestApp.getHttpAdapter().getInstance();
+  return expressApp(req, res);
+}
