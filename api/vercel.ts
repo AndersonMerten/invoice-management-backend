@@ -11,7 +11,7 @@ const bootstrap = async () => {
 // Cache da instância do NestJS
 let cachedApp: any;
 
-export const handler: Handler = async (
+const handler: Handler = async (
   event: HandlerEvent,
   context: HandlerContext,
 ) => {
@@ -39,3 +39,6 @@ export const handler: Handler = async (
     });
   });
 };
+
+// Exporta o handler como default export
+export default handler;
