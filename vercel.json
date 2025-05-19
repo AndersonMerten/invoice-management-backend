@@ -5,7 +5,7 @@
   "builds": [
     {
       "src": "api/vercel.ts",
-      "use": "@vercel/node"
+      "use": "@vercel/node@2.0.0"
     }
   ],
   "routes": [
@@ -18,9 +18,7 @@
       "dest": "api/vercel.ts"
     }
   ],
-  "functions": {
-    "api/*.ts": {
-      "runtime": "@vercel/node@2.0.0"
-    }
+  "env": {
+    "NODE_ENV": "production"
   }
 }

@@ -21,10 +21,15 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
 
-  // Use process.env.PORT que o Elastic Beanstalk define
-  const port = process.env.PORT || 3000;
-  await app.listen(port, '0.0.0.0');
-  console.log(`Application is running on port: ${port}`);
+  // Em ambiente serverless, não precisamos do listen
+  if (process.env.NODE_ENV !== 'production') {
+    const port = process.env.PORT || 3000;
+    await app.listen(port, '0.0.0.0');
+    console.log(`Application is running on port: ${port}`);
+  }
+
+  return app;
 }
 
-bootstrap();
+// Exporta a função bootstrap para ser usada no ambiente serverless
+export default bootstrap();
