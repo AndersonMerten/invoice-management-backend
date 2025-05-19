@@ -10,10 +10,12 @@ async function bootstrap() {
   return app;
 }
 
-export const handler = async (event: any, context: any) => {
+const handler = async (event: any, context: any) => {
   if (!server) {
     const app = await bootstrap();
     server = serverlessExpress({ app: app.getHttpAdapter().getInstance() });
   }
   return server(event, context);
 };
+
+export default handler;
