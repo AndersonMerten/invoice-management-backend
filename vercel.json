@@ -1,12 +1,11 @@
 {
   "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "builds": [
     {
       "src": "api/vercel.ts",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["dist/**"]
-      }
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -19,7 +18,7 @@
       "dest": "api/vercel.ts"
     }
   ],
-    "functions": {
+  "functions": {
     "api/*.ts": {
       "runtime": "@vercel/node@2.0.0"
     }
