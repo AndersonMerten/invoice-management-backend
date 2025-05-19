@@ -10,24 +10,12 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "api/vercel.ts",
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
-        "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
-        "Cache-Control": "no-cache, no-store, must-revalidate",
-        "Content-Type": "text/html; charset=utf-8"
-      }
-    },
-    {
       "src": "/(.*)",
       "dest": "api/vercel.ts",
       "headers": {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
-        "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
-        "Cache-Control": "no-cache, no-store, must-revalidate"
+        "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS"
       }
     }
   ],

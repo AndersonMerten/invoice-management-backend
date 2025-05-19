@@ -1,6 +1,6 @@
 import { NestFactory } from '@nestjs/core';
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app.module';
-import { setupSwagger } from './swagger';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -12,8 +12,18 @@ async function bootstrap() {
     credentials: true,
   });
 
-  // Configuração do Swagger
-  setupSwagger(app);
+  // Configuração básica do Swagger
+  const config = new DocumentBuilder()
+    .setTitle('Invoice Management API')
+    .setDescription('API para gerenciamento de faturas')
+    .setVersion('1.0')
+    .addTag('invoices')
+    .build();
+
+  const document = SwaggerModule.createDocument(app, config);
+
+  // Configuração do Swagger UI com opções mínimas
+  SwaggerModule.setup('/', app, document);
 
   // Em ambiente serverless, não precisamos do listen
   if (process.env.NODE_ENV !== 'production') {
