@@ -12,7 +12,7 @@ async function bootstrap() {
     credentials: true,
   });
 
-  // Configuração básica do Swagger
+  // Configuração do Swagger
   const config = new DocumentBuilder()
     .setTitle('Invoice Management API')
     .setDescription('API para gerenciamento de faturas')
@@ -22,8 +22,32 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config);
 
-  // Configuração do Swagger UI com opções mínimas
-  SwaggerModule.setup('/', app, document);
+  // Configuração do Swagger UI com opções específicas para ambiente serverless
+  SwaggerModule.setup('/', app, document, {
+    swaggerOptions: {
+      persistAuthorization: true,
+      docExpansion: 'none',
+      filter: true,
+      showExtensions: true,
+      showCommonExtensions: true,
+      defaultModelsExpandDepth: 3,
+      defaultModelExpandDepth: 3,
+      displayRequestDuration: true,
+      syntaxHighlight: {
+        theme: 'monokai',
+      },
+    },
+    customSiteTitle: 'Invoice Management API Documentation',
+    customfavIcon: 'https://nestjs.com/img/favicon.ico',
+    customJs: [
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-bundle.min.js',
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-standalone-preset.min.js',
+    ],
+    customCssUrl: [
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui.min.css',
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-standalone-preset.min.css',
+    ],
+  });
 
   // Em ambiente serverless, não precisamos do listen
   if (process.env.NODE_ENV !== 'production') {
