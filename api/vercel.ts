@@ -1,11 +1,10 @@
-import { INestApplication } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from '../src/app.module';
 
-let app: INestApplication;
+let app;
 
-async function getApp() {
+async function bootstrap() {
   if (!app) {
     app = await NestFactory.create(AppModule);
 
@@ -15,7 +14,7 @@ async function getApp() {
       credentials: true,
     });
 
-    // Configuração do Swagger em formato simplificado
+    // Configuração do Swagger
     const config = new DocumentBuilder()
       .setTitle('Invoice Management API')
       .setDescription('API para gerenciamento de faturas')
@@ -24,20 +23,23 @@ async function getApp() {
       .build();
 
     const document = SwaggerModule.createDocument(app, config);
-    SwaggerModule.setup('api', app, document, {
-      useGlobalPrefix: false,
+
+    // Muito importante: Expor o documento JSON do Swagger
+    app.use('/api-docs/swagger.json', (req, res) => {
+      res.setHeader('Content-Type', 'application/json');
+      res.send(document);
     });
 
     await app.init();
   }
+
   return app;
 }
 
+// Handler serverless da Vercel
 export default async function handler(req, res) {
-  const nestApp = await getApp();
-  const server = nestApp.getHttpAdapter().getInstance();
+  const server = await bootstrap();
+  const httpAdapter = server.getHttpAdapter();
 
-  await new Promise((resolve) => {
-    server(req, res, resolve);
-  });
+  return httpAdapter.getInstance()(req, res);
 }

@@ -22,8 +22,9 @@
         const baseUrl = window.location.protocol + '//' + window.location.host;
 
         // Inicializa o Redoc com o JSON da API
+        // Use um endpoint simplificado como /swagger.json ou /api-json
         Redoc.init(
-            baseUrl + '/api-docs/swagger.json',
+            baseUrl + '/swagger.json',
             {
                 scrollYOffset: 50,
                 hideDownloadButton: false,

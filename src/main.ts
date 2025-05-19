@@ -12,7 +12,7 @@ async function bootstrap() {
     credentials: true,
   });
 
-  // Configuração do Swagger apenas para gerar o documento
+  // Configuração do Swagger
   const config = new DocumentBuilder()
     .setTitle('Invoice Management API')
     .setDescription('API para gerenciamento de faturas')
@@ -22,13 +22,12 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config);
 
-  // Expor apenas o documento JSON do Swagger
-  app.use('/api-docs/swagger.json', (req, res) => {
-    res.json(document);
+  // Muito importante: Expor o documento JSON do Swagger com um handler simples
+  // Este é o ponto chave para resolver o problema 404
+  app.use('/swagger.json', (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.send(document);
   });
-
-  // NÃO configure o SwaggerUI - remova completamente esta linha
-  // SwaggerModule.setup('api', app, document);
 
   // Em ambiente serverless, não precisamos do listen
   if (process.env.NODE_ENV !== 'production') {
