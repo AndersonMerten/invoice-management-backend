@@ -1,13 +1,9 @@
 import { NestFactory } from '@nestjs/core';
-import { ExpressAdapter } from '@nestjs/platform-express';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import * as express from 'express';
 import { AppModule } from './app.module';
 
-async function bootstrap(expressInstance?: express.Express) {
-  const app = expressInstance
-    ? await NestFactory.create(AppModule, new ExpressAdapter(expressInstance))
-    : await NestFactory.create(AppModule);
+async function bootstrap() {
+  const app = await NestFactory.create(AppModule);
 
   app.enableShutdownHooks();
   app.enableCors({
@@ -26,32 +22,10 @@ async function bootstrap(expressInstance?: express.Express) {
 
   const document = SwaggerModule.createDocument(app, config);
 
-  // Configuração do Swagger UI na rota /api-docs
-  SwaggerModule.setup('api', app, document, {
-    swaggerOptions: {
-      persistAuthorization: true,
-      docExpansion: 'none',
-      filter: true,
-      showExtensions: true,
-      showCommonExtensions: true,
-      defaultModelsExpandDepth: 3,
-      defaultModelExpandDepth: 3,
-      displayRequestDuration: true,
-      syntaxHighlight: {
-        theme: 'monokai',
-      },
-    },
-    customSiteTitle: 'Invoice Management API Documentation',
-    customfavIcon: 'https://nestjs.com/img/favicon.ico',
-    customJs: [
-      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-bundle.min.js',
-      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-standalone-preset.min.js',
-    ],
-    customCssUrl: [
-      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui.min.css',
-      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-standalone-preset.min.css',
-    ],
-  });
+  // Configurar Swagger em múltiplas rotas
+  SwaggerModule.setup('', app, document); // Rota raiz
+  SwaggerModule.setup('api', app, document); // Rota /api
+  SwaggerModule.setup('docs', app, document); // Rota /docs (alternativa)
 
   // Em ambiente serverless, não precisamos do listen
   if (process.env.NODE_ENV !== 'production') {
