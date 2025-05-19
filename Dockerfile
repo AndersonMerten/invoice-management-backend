@@ -1,28 +1,41 @@
-# Dockerfile para Elastic Beanstalk
+# Estágio de construção
+FROM node:20-alpine AS builder
+
+WORKDIR /app
+
+# Instala pnpm e dependências
+RUN npm install -g pnpm
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install
+
+# Copia e gera o cliente Prisma
+COPY prisma ./prisma
+RUN npx prisma generate
+
+# Copia e constrói o aplicativo
+COPY . .
+RUN pnpm build
+
+# Estágio de produção
 FROM node:20-alpine
 
 WORKDIR /app
 
-# Install pnpm
-RUN npm install -g pnpm
+# Copia apenas o necessário
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/prisma ./prisma
 
-# Copy package files
-COPY package.json pnpm-lock.yaml ./
+# Variáveis de ambiente (substituídas pela Vercel)
+ENV PORT=3000
+ENV DATABASE_URL=${NEON_DATABASE_URL}?sslmode=require
+ENV NODE_ENV=production
 
-# Install dependencies
-RUN pnpm install
+# Instala apenas produção no estágio final
+RUN npm install -g pnpm && pnpm install --prod
 
-# Copy source code
-COPY . .
-
-# Generate Prisma client with the correct binary targets
-RUN npx prisma generate
-
-# Build the application
-RUN pnpm build
-
-# Expose the port
 EXPOSE 3000
 
-# Start the server
-CMD ["node", "dist/src/main"]
+# Comando de inicialização adaptado
+CMD ["sh", "-c", "npx prisma migrate deploy && node dist/src/main"]
