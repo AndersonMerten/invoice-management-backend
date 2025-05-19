@@ -1,15 +1,11 @@
 {
   "version": 2,
-  "buildCommand": "prisma generate && nest build --webpack",
+  "buildCommand": "prisma generate && nest build",
   "outputDirectory": "dist",
   "builds": [
     {
       "src": "api/vercel.ts",
-      "use": "@vercel/node@2.0.0",
-      "config": {
-        "includeFiles": ["dist/**"],
-        "tsconfig": "tsconfig.json"
-      }
+      "use": "@vercel/node@2.0.0"
     }
   ],
   "routes": [

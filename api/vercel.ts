@@ -1,44 +1,19 @@
 import { NestFactory } from '@nestjs/core';
-import type { Handler, HandlerContext, HandlerEvent } from '@netlify/functions';
+import { configure as serverlessExpress } from '@vendia/serverless-express';
 import { AppModule } from '../src/app.module';
 
-const bootstrap = async () => {
+let server: any;
+
+async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   await app.init();
   return app;
-};
+}
 
-// Cache da instância do NestJS
-let cachedApp: any;
-
-const handler: Handler = async (
-  event: HandlerEvent,
-  context: HandlerContext,
-) => {
-  if (!cachedApp) {
-    cachedApp = await bootstrap();
+export const handler = async (event: any, context: any) => {
+  if (!server) {
+    const app = await bootstrap();
+    server = serverlessExpress({ app: app.getHttpAdapter().getInstance() });
   }
-
-  const expressApp = cachedApp.getHttpAdapter().getInstance();
-
-  return new Promise((resolve) => {
-    expressApp(event, context, (err: any, result: any) => {
-      if (err) {
-        resolve({
-          statusCode: 500,
-          body: JSON.stringify({ error: err.message }),
-        });
-        return;
-      }
-      resolve(
-        result || {
-          statusCode: 200,
-          body: JSON.stringify({ message: 'Success' }),
-        },
-      );
-    });
-  });
+  return server(event, context);
 };
-
-// Exporta o handler como default export
-export default handler;
