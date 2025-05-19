@@ -2,19 +2,26 @@
   "version": 2,
   "builds": [
     {
-      "src": "Dockerfile",
-      "use": "@vercel/docker",
+      "src": "api/vercel.ts",
+      "use": "@vercel/node",
       "config": {
-        "maxLambdaSize": "300mb",
-        "suppressLoad": true
+        "includeFiles": ["dist/**"]
       }
     }
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "api/vercel.ts"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/",
-      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
+      "dest": "api/vercel.ts"
     }
-  ]
+  ],
+    "functions": {
+    "api/*.ts": {
+      "runtime": "@vercel/node@2.0.0"
+    }
+  }
 }
