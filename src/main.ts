@@ -12,19 +12,16 @@ async function bootstrap() {
     credentials: true,
   });
 
+  // Configuração básica do Swagger
   const config = new DocumentBuilder()
-    .setTitle('Median')
-    .setDescription('The Median API description')
-    .setVersion('0.1')
+    .setTitle('Median API')
+    .setDescription('API Documentation')
+    .setVersion('1.0')
+    .addTag('api')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api', app, document, {
-    swaggerOptions: {
-      persistAuthorization: true,
-    },
-    customSiteTitle: 'Median API Documentation',
-  });
+  SwaggerModule.setup('docs', app, document);
 
   // Em ambiente serverless, não precisamos do listen
   if (process.env.NODE_ENV !== 'production') {
