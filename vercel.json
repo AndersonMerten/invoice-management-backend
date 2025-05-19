@@ -6,9 +6,21 @@
     {
       "src": "api/vercel.ts",
       "use": "@vercel/node@2.0.0"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/api-docs/swagger.json",
+      "dest": "api/vercel.ts"
+    },
+    {
+      "src": "/api",
+      "dest": "/public/api/index.html"
+    },
     {
       "src": "/(.*)",
       "dest": "api/vercel.ts",

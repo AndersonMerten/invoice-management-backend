@@ -25,6 +25,7 @@
     "@nestjs/platform-express": "^11.0.1",
     "@nestjs/swagger": "^11.2.0",
     "@prisma/client": "^6.7.0",
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "prisma": "^6.7.0",
     "redoc-express": "^2.1.0",
