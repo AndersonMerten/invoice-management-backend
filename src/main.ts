@@ -12,16 +12,24 @@ async function bootstrap() {
     credentials: true,
   });
 
-  // Configuração básica do Swagger
+  // Configuração do Swagger
   const config = new DocumentBuilder()
-    .setTitle('Median API')
-    .setDescription('API Documentation')
+    .setTitle('Invoice Management API')
+    .setDescription('API para gerenciamento de faturas')
     .setVersion('1.0')
-    .addTag('api')
+    .addTag('invoices')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('docs', app, document);
+  SwaggerModule.setup('api', app, document, {
+    swaggerOptions: {
+      persistAuthorization: true,
+      docExpansion: 'list',
+      filter: true,
+      showRequestDuration: true,
+    },
+    customSiteTitle: 'Invoice Management API Documentation',
+  });
 
   // Em ambiente serverless, não precisamos do listen
   if (process.env.NODE_ENV !== 'production') {
