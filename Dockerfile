@@ -22,11 +22,7 @@ RUN npx prisma generate
 RUN pnpm build
 
 # Expose the port
-
-HEALTHCHECK --interval=30s --timeout=3s \
-    CMD wget --quiet --tries=1 --spider http://localhost:8080/api/health || exit 1
-
-EXPOSE 8080
+EXPOSE 3000
 
 # Start the server
 CMD ["node", "dist/src/main"]

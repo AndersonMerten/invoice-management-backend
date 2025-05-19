@@ -1,0 +1,44 @@
+{
+  "family": "invoice-management-task",
+  "networkMode": "awsvpc",
+  "executionRoleArn": "arn:aws:iam::495467520574:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "name": "invoice-management-container",
+      "image": "495467520574.dkr.ecr.sa-east-1.amazonaws.com/invoice-api-rapid:v4",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 3333,
+          "hostPort": 3333,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        {
+          "name": "DATABASE_URL",
+          "value": "postgresql://notas_owner:npg_FL47dfhcBEwG@ep-cool-pond-acboijmk.sa-east-1.aws.neon.tech/notas?sslmode=require"
+        },
+        {
+          "name": "DATABASE_DIRECT_URL",
+          "value": "postgresql://notas_owner:npg_FL47dfhcBEwG@ep-cool-pond-acboijmk-pooler.sa-east-1.aws.neon.tech/notas?sslmode=require"
+        },
+        {
+          "name": "NODE_ENV",
+          "value": "production"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/invoice-management-task",
+          "awslogs-region": "sa-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512"
+}
