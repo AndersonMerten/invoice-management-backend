@@ -11,11 +11,21 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "api/vercel.ts"
+      "dest": "api/vercel.ts",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+        "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS"
+      }
     },
     {
       "src": "/(.*)",
-      "dest": "api/vercel.ts"
+      "dest": "api/vercel.ts",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+        "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS"
+      }
     }
   ],
   "env": {
