@@ -1,5 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import redoc from 'redoc-express';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
@@ -22,10 +23,28 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config);
 
-  // Configurar Swagger em múltiplas rotas
-  SwaggerModule.setup('', app, document); // Rota raiz
-  SwaggerModule.setup('api', app, document); // Rota /api
-  SwaggerModule.setup('docs', app, document); // Rota /docs (alternativa)
+  // Expor apenas o documento JSON do Swagger
+  app.use('/api-docs/swagger.json', (req, res) => {
+    res.json(document);
+  });
+
+  // Configurar Redoc
+  app.use(
+    '/api',
+    redoc({
+      title: 'Invoice Management API',
+      specUrl: '/api-docs/swagger.json',
+      redocOptions: {
+        theme: {
+          colors: {
+            primary: {
+              main: '#3f51b5',
+            },
+          },
+        },
+      },
+    }),
+  );
 
   // Em ambiente serverless, não precisamos do listen
   if (process.env.NODE_ENV !== 'production') {
@@ -37,5 +56,4 @@ async function bootstrap() {
   return app;
 }
 
-// Exporta a função bootstrap para ser usada no ambiente serverless
 export default bootstrap();

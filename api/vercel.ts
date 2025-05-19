@@ -1,48 +1,43 @@
+import { INestApplication } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from '../src/app.module';
 
-let cachedServer: any;
+let app: INestApplication;
 
-async function createServer() {
-  const app = await NestFactory.create(AppModule);
+async function getApp() {
+  if (!app) {
+    app = await NestFactory.create(AppModule);
 
-  app.enableCors({
-    origin: '*',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-    credentials: true,
-  });
+    app.enableCors({
+      origin: '*',
+      methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+      credentials: true,
+    });
 
-  // Configuração do Swagger
-  const config = new DocumentBuilder()
-    .setTitle('Invoice Management API')
-    .setDescription('API para gerenciamento de faturas')
-    .setVersion('1.0')
-    .addTag('invoices')
-    .build();
+    // Configuração do Swagger em formato simplificado
+    const config = new DocumentBuilder()
+      .setTitle('Invoice Management API')
+      .setDescription('API para gerenciamento de faturas')
+      .setVersion('1.0')
+      .addTag('invoices')
+      .build();
 
-  const document = SwaggerModule.createDocument(app, config);
+    const document = SwaggerModule.createDocument(app, config);
+    SwaggerModule.setup('api', app, document, {
+      useGlobalPrefix: false,
+    });
 
-  // Configurar Swagger em múltiplas rotas
-  SwaggerModule.setup('', app, document);
-  SwaggerModule.setup('api', app, document);
-  SwaggerModule.setup('docs', app, document);
-
-  await app.init();
-
+    await app.init();
+  }
   return app;
 }
 
-export default async function handler(req: any, res: any) {
-  if (!cachedServer) {
-    cachedServer = await createServer();
-  }
+export default async function handler(req, res) {
+  const nestApp = await getApp();
+  const server = nestApp.getHttpAdapter().getInstance();
 
-  const server = cachedServer;
-  const httpAdapter = server.getHttpAdapter();
-
-  // Forçar o prefixo correto para a request
-  req.originalUrl = req.url;
-
-  return httpAdapter.getInstance()(req, res);
+  await new Promise((resolve) => {
+    server(req, res, resolve);
+  });
 }
