@@ -27,6 +27,14 @@ export function setupSwagger(app: INestApplication) {
 
   // Configuração do Express
   const expressApp = app.getHttpAdapter().getInstance();
+
+  // Expor o JSON do Swagger
+  expressApp.get('/swagger.json', (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.send(document);
+  });
+
+  // Configurar o Swagger UI
   expressApp.use(
     '/api',
     swaggerUi.serve,
