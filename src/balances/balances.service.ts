@@ -29,6 +29,9 @@ export class BalancesService {
       year: new Date().getFullYear(),
     };
 
+    await this.prisma.invoice.deleteMany({});
+    await this.prisma.cashUp.deleteMany({});
+
     // Salva o balance no banco de dados
     return this.prisma.balance.create({ data: balanceData });
   }
