@@ -6,7 +6,7 @@ import { UpdateBalanceDto } from './dto/update-balance.dto';
 @Injectable()
 export class BalancesService {
   constructor(private prisma: PrismaService) {}
-
+  // chamado no https://console.cron-job.org/jobs/6166738 no dia 1 de cada mês.
   async create(createBalanceDto: CreateBalanceDto) {
     const invoicesSum = await this.prisma.invoice.aggregate({
       _sum: { value: true },
@@ -37,7 +37,11 @@ export class BalancesService {
   }
 
   findAll() {
-    return this.prisma.balance.findMany();
+    return this.prisma.balance.findMany({
+      orderBy: {
+        createdAt: 'asc',
+      }
+    });
   }
 
   findOne(id: number) {

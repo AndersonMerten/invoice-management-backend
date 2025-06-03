@@ -12,7 +12,11 @@ export class InvoicesService {
   }
 
   findAll() {
-    return this.prisma.invoice.findMany();
+    return this.prisma.invoice.findMany({
+      orderBy: {
+        client_name: 'asc'
+      }
+    });
   }
 
   findOne(id: number) {

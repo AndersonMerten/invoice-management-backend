@@ -12,7 +12,11 @@ export class CashUpsService {
   }
 
   findAll() {
-    return this.prisma.cashUp.findMany();
+    return this.prisma.cashUp.findMany({
+      orderBy: {
+        createdAt: 'asc'
+      }
+    });
   }
 
   findOne(id: number) {
